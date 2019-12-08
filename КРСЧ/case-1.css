@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap&subset=cyrillic,cyrillic-ext');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+padding: 0;
+margin: 0;
+font-family:Montserrat; 
+box-sizing:border-box;
+}
+h1{
+  font-family: Montserrat;
+  color:#673894;
+  
+}
+h2{
+  font-family: Montserrat;
+  color:#673894;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.promotion{
+  display: flex;
+  grid-auto-columns: 40% 40%;  
+  justify-content: space-around;
+}
+.topic-photo{
+  box-align: center;
+}
+.topic-photo img{
+    border-radius: 100px;
+    box-shadow:0 0 10px #818080;
+    border: 2px solid #FFFFFF;
+    width:400px;
+    height:500px;
+
+}
+.topic p{
+  font-size: 25px;
+}
+.history{
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-content: center;
+  width:70%;
+}
+.history h1{
+  font-family: Montserrat;
+  color:#673894;
+}
+.history p{
+  font-family: Montserrat;
+  color:#29272b;
+  font-weight: normal; 
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  line-height: 35px;
+}
+
+@media (max-width:450px){
+  .promotion{
+    display: block;
+  }
+  main h1{
+    font-family: Montserrat;
+    color:#673894;
+    font-size: 20px;
+    
+  }
+  main h2{
+    font-family: Montserrat;
+    color:#673894;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    font-size: 18px;
+  }
+  .topic p{
+    font-size: 16px;
+  }
+  .topic-photo img{
+    border-radius: 60px;
+    box-shadow:0 0 10px #818080;
+    border: 2px solid #FFFFFF;
+    width:200px;
+    height:250px;
+  } 
+  .topic-photo{
+   display: block;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+  }
+  /* Slideshow container */
+ .slideshow-container {
+  max-width: 320px;
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 5%;
+  height:50% ;
+ }/* Hide the images by default */
+ .mySlides {
+  display: none;
+  }
+ .mySlides img{
+    width: 320px;
+    height: 240px;
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-left:25%;
+  margin-right:25%;
+  margin-top: 5%;
+  width:70%;
+  height:50% ;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+
+}
+.mySlides img{
+    width: 700px;
+    height: 500px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(85, 79, 79);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 26%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
